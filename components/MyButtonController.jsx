@@ -17,7 +17,7 @@ var MyButtonController = React.createClass({
   componentWillUnmount: function() {
     ListStore.removeChangeListener(this._onChange);
   },
-
+  
   _onChange: function () {
     this.setState({
       items: ListStore.getAll()
