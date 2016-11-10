@@ -9,6 +9,7 @@ var ListStore = assign({}, EventEmitter.prototype, {
   },
 
   addNewItemHandler: function (text) {
+    text = this.items.length%2 == 0 ? 'karsawu' : 'new-item';
     this.items.push(text);
   },
 
